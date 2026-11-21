@@ -41,7 +41,9 @@
   .tools{display:flex;gap:8px;align-items:center}
   .search{width:190px;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--panel);font-size:13px}
   .search::placeholder{color:var(--muted)}
-  .date{width:auto;max-width:150px;color-scheme:light dark}
+  .date{width:auto;max-width:150px;color-scheme:light dark;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;min-height:32px;cursor:pointer}
+  .date::-webkit-calendar-picker-indicator{opacity:.6;cursor:pointer;margin-left:6px}
+  .date:hover::-webkit-calendar-picker-indicator{opacity:1}
   .btn{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer;white-space:nowrap}
   .btn:hover{background:var(--panel-2)}
   @media (max-width:420px){
